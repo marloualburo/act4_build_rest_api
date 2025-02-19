@@ -2,7 +2,7 @@ import express from "express"
 import * as dotenv from "dotenv"
 import cors from "cors"
 import helmet from "helmet"
-import { userRouter } from "./users/user.routes"
+import  { userRouter }  from "./users/user.routes"
 
 dotenv.config()
 
@@ -24,3 +24,4 @@ app.use('/', userRouter)
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`)
 })
+
